@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/home/eik/**)",
+      "Bash(echo:*)",
+      "Bash(systemctl status:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
