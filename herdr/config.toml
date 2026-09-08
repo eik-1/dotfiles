@@ -1,0 +1,22 @@
+# Herdr configuration with tmux-style navigation.
+
+[keys]
+prefix = "ctrl+space"
+reload_config = "prefix+r"
+resize_mode = "prefix+shift+r"
+
+focus_pane_left = "alt+left"
+focus_pane_right = "alt+right"
+focus_pane_up = "alt+up"
+focus_pane_down = "alt+down"
+
+split_vertical = "prefix+v"
+split_horizontal = "prefix+h"
+
+previous_tab = ["prefix+p", "shift+left"]
+next_tab = ["prefix+n", "shift+right"]
+move_tab_previous = "ctrl+shift+left"
+move_tab_next = "ctrl+shift+right"
+
+[ui]
+mouse_capture = true

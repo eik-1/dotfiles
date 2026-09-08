@@ -14,6 +14,10 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$HOME/.config/.foundry/bin" # foundry
 export PATH="$HOME/.opencode/bin:$PATH"        # opencode
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
@@ -40,6 +44,7 @@ eval "$(pyenv init -)"
 # ------------------------------
 # Aliases
 # ------------------------------
+alias reload='source ~/.bashrc'
 alias kittyh='kitty --directory "$(pwd)" &'
 alias tasks='nvim ~/Desktop/Tasks.txt'
 alias running='systemctl list-units --type=service --state=running'
@@ -55,7 +60,8 @@ alias status='systemctl status'
 # Prompt & startup
 # ------------------------------
 eval "$(starship init bash)"
-fastfetch
+# (This got annoying so commented for now)
+# fastfetch
 
 # ------------------------------
 # Managed / generated — leave as-is
@@ -63,3 +69,11 @@ fastfetch
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 . "$HOME/.local/share/../bin/env"
+
+# pnpm
+export PNPM_HOME="/home/eik/.local/share/pnpm"
+case ":$PATH:" in
+*":$PNPM_HOME/bin:"*) ;;
+*) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
