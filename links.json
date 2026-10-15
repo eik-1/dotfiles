@@ -1,0 +1,9 @@
+[
+  { "source": "ai/skills", "target": ".agents/skills" },
+  { "source": "ai/claude/settings.json", "target": ".claude/settings.json" },
+  { "source": "ai/claude/rules", "target": ".claude/rules" },
+  { "source": "ai/claude/agents", "target": ".claude/agents" },
+  { "source": "ai/claude/skills", "target": ".claude/skills" },
+  { "source": "ai/herdr/config.toml", "target": ".config/herdr/config.toml" },
+  { "source": "zed/settings.json", "target": ".config/zed/settings.json" }
+]

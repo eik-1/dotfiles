@@ -1,1 +1,23 @@
 /*.txt
+
+# Local credentials and application state
+.env
+.env.*
+!.env.example
+*.local.*
+auth.json
+.credentials.json
+credentials.json
+*.log
+*.sock
+*.sqlite*
+*.db
+*.db-shm
+*.db-wal
+*.bak
+__pycache__/
+node_modules/
+ai/**/sessions/
+ai/**/history.jsonl
+ai/**/session.json
+ai/**/.plugins.lock
